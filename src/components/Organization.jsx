@@ -5,22 +5,6 @@ import { Users, Calendar, Briefcase, Award, Trophy, Star } from 'lucide-react';
 const Organization = () => {
     const experiences = [
         {
-            role: "Cloud Computing Cohort",
-            org: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
-            period: "September 2024 – January 2025",
-            type: "internship",
-            desc: "Specialized in cloud infrastructure and deployment pipelines. Gained hands-on experience with Google Cloud technologies and contributed to a capstone project solving real-world problems.",
-            color: "from-red-600 to-red-500"
-        },
-        {
-            role: "Fullstack Web Developer Intern",
-            org: "Rumah Sakit Dr. Mohammad Hoesin (RSMH)",
-            period: "July 2024 – August 2024",
-            type: "internship",
-            desc: "Developed an online attendance web application using Laravel (PHP/MySQL) with a user-friendly frontend interface.",
-            color: "from-blue-600 to-indigo-600"
-        },
-        {
             role: "Public Relation Member",
             org: "GDGoC Chapter Sriwijaya University",
             period: "Jan 2025 - Present",
@@ -45,12 +29,28 @@ const Organization = () => {
             color: "from-purple-600 to-pink-600"
         },
         {
+            role: "Cloud Computing Cohort",
+            org: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+            period: "September 2024 – January 2025",
+            type: "internship",
+            desc: "Specialized in cloud infrastructure and deployment pipelines. Gained hands-on experience with Google Cloud technologies and contributed to a capstone project solving real-world problems.",
+            color: "from-red-600 to-red-500"
+        },
+        {
             role: "Deputy of Sports & Talent Dev",
             org: "HIMPUNAN MAHASISWA INFORMATIKA (HMIF)",
             period: "Feb 2024 – Dec 2024",
             type: "organization",
             desc: "Led talent development initiatives and served as PIC for Exhibition Srifoton 2024, showcasing student innovations.",
             color: "from-cyan-500 to-blue-500"
+        },
+        {
+            role: "Fullstack Web Developer Intern",
+            org: "Rumah Sakit Dr. Mohammad Hoesin (RSMH)",
+            period: "July 2024 – August 2024",
+            type: "internship",
+            desc: "Developed an online attendance web application using Laravel (PHP/MySQL) with a user-friendly frontend interface.",
+            color: "from-blue-600 to-indigo-600"
         },
         {
             role: "Staff of Sport Division",
