@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* Enable class-based dark mode */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #6366f1;
+  --color-secondary: #ec4899;
+  --color-dark: #0f172a;
+  
+  --font-sans: "Outfit", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased transition-colors duration-300;
+  }
+  
+  :root.dark body {
+    @apply bg-dark text-slate-100;
+  }
+}
+
+@layer utilities {
+  .card-3d {
+    @apply relative transition-all duration-300 ease-out;
+    /* Light mode shadow */
+    box-shadow: 
+      10px 10px 30px #d1d5db, 
+      -10px -10px 30px #ffffff;
+  }
+  
+  :root.dark .card-3d {
+     /* Dark mode shadow */
+    box-shadow: 
+      20px 20px 60px #0a0f1c, 
+      -20px -20px 60px #141f38; 
+  }
+  
+  .card-3d:hover {
+    transform: translateY(-10px);
+  }
+  
+  :root.dark .card-3d:hover {
+    box-shadow: 
+      25px 25px 75px #0a0f1c, 
+      -25px -25px 75px #141f38; 
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+  }
+}
