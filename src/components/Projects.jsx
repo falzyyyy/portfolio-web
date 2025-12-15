@@ -5,6 +5,13 @@ import { Github, ExternalLink, Folder } from 'lucide-react';
 const Projects = () => {
     const projects = [
         {
+            title: "SkillUp Academy",
+            desc: "An e-learning platform dashboard with authentication, role-based access, and comprehensive student management features.",
+            tags: ["React", "TailwindCSS", "Supabase"],
+            github: "https://github.com/falzyyyy/skillup-academy-frontend",
+            demo: "https://skillup-academy-project.vercel.app/"
+        },
+        {
             title: "E-Commerce Dashboard",
             desc: "A comprehensive dashboard for managing online stores with real-time analytics and inventory management.",
             tags: ["React", "Chart.js", "TailwindCSS"],
